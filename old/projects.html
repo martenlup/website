@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/projects.css">
+  <meta name="robots" content="noindex">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Hind+Siliguri:wght@500&family=Raleway:wght@400;500&display=swap"
+    rel="stylesheet">
+  <title>Projekte</title>
+</head>
+
+<body>
+
+  <section class="projekte">
+    <h2>
+      Raspberry Pi Webserver und Gameserver Projekt
+    </h2>
+    <p>Als ich vor einigen Jahren das erste mal vom Raspberry Pi in einem Youtube Video gehört habe war ich echt
+      begeistert.
+      2019 kam dann der Raspberry Pi 4 raus, der in der 4GB RAM Variante echt Leistungsstark wurde.
+      </br> </br>
+      Als erstes Projekt wollte ich einen Minecraft Gameserver hosten. Die Vorteile des Pi's waren dabei offensichtlich:
+      Geringer Stromverbrauch, kein Lüfter, klein und kompakt.
+      Doch hat der neue Pi genug Leistung für einen Vanilla Server? Die Kurze Antwort: Ja hat er. </br>
+      Im ersten Versuch habe ich einen <a href="https://cuberite.org/">Cuberite</a> Server gehostet. Dieser Server
+      Client ist
+      in C++
+      geschrieben und verbraucht daher deutlich weniger Ressourcen als
+      der Vanilla Java Client. Selbst mit 7 Spielern gab es keine Probleme, wenn man nicht gerade in sämtliche
+      Richtungen gleichzeitig fliegt. Doch der Client war mir ein wenig zu buggy.
+      </br> </br>
+      Der zweite Versuch war der <a href="https://papermc.io">PaperMC</a> Java Server client. Dieser ist zwar deutlich
+      ressourcenfressender als der Cuberite Server, jedoch deutlich sparsamer
+      als der Standard Minecraft Server Client. Damit hat es super geklappt. Es macht mit ca. 5 Leuten enorm laune zu
+      spielen. Allerdings sollte man nicht zu häufig neue Chunks laden, sonst
+      stürzt der Server relativ schnell ab. Trotzdem habe ich nun einen voll funktionsfähigen Minecraft Server
+      im Haus stehen, den ich gemütlich im Regal verstecken und per SSH und
+      Remotedesktop bedienen kann. <span class="span">Es hat sich also gelohnt. </span>
+      </br>
+      </br>
+
+    </p>
+    <div class="aufzaehlung-wrapper">
+      <section class="aufzaehlung">
+        <ul>
+          <h3>Dafür wird mein Raspberry Pi benutzt:</h3>
+          <li>Webserver mit Nginx
+          </li>
+          <li>Minecraft Gameserver mit dem Paper.MC Java Server Client</li>
+          <li>Cuberite.org Minecraft Gameserver, geschrieben in C++</li>
+          <li>Linux Lernressource für Desktoplose Linux Betriebssysteme</li>
+        </ul>
+
+        </br>
+        </br>
+        </br>
+      </section>
+
+      <div class="zurueck">
+        <a href="./index.html">Zurück zum Hauptinhalt</a>
+      </div>
+
+  </section>
+  </div>
+  <section class="bilder">
+    <div class="bilder-wrapper">
+      <img class="bild1" class="bilder" src="./img/pi1" alt="">
+      <img class="bild2" class="bilder" src="./img/pi2"" alt=""">
+      <img class="bild3" class="bilder" src="./img/pi3"" alt="">
+      <img class=" bild4" class="bilder" src="./img/pi4"" alt="">
+    </div>
+  </section>
+
+  </h2>
+
+</body>
+
+</html>

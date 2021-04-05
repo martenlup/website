@@ -1,0 +1,122 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  margin: auto;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 0rem;
+  background: #b6c7ff;
+  width: 70%;
+  margin: auto;
+  color: rgb(41, 41, 41);
+}
+h1{
+  font-size: 2.6rem;
+}
+ul {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 3.3rem;
+  padding: 4rem;
+  text-decoration: underline;
+}
+h3 {
+  font-size: 2.1rem;
+  font-weight: normal;
+  padding: 1rem;
+  text-align:center
+}
+a {
+  color:rgb(156, 86, 158);
+  text-decoration: underline;
+}
+p {
+  font-weight: 500;
+  padding: 2rem;
+}
+
+/* NAV */
+
+.main-head {
+  /* position: sticky;
+  top: 0%;
+  z-index: 4; */
+  background-color: #9eb4ff;
+ 
+  
+}
+.main-head nav {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  min-height: 5vh;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.main-head nav ul {
+  flex: 1 1 20rem;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-around;
+  padding: 2rem;
+  text-decoration: underline;
+}
+.main-head nav a {
+  flex: 1 1 20rem;
+  margin: 1rem;
+}
+
+#logo {
+  list-style: none;
+  text-decoration: none;
+  font-family: Caveat;
+}
+
+
+.projekte {
+
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+
+}
+.aufzaehlung-wrapper {
+  
+}
+.aufzaehlung {
+
+span {
+  text-decoration: underline;
+}
+
+.zurueck {
+  padding: 10rem;
+  font-size: 1.5rem;
+  color: blanchedalmond;
+}
+
+@media screen and (max-width:1024px) {
+  body {
+    width: 95%;
+  }
+  h1, h2, h3 {
+    text-align: center;
+    padding: 2rem;
+  }
+  li {
+    text-align: center;
+    padding: 0.5rem;
+  }
+}

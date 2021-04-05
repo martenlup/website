@@ -1,0 +1,303 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 62.5%;
+  margin: auto;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: rgb(44, 44, 44);
+}
+h1{
+  font-size: 2.6rem;
+}
+ul {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 3.3rem;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: rgb(44, 44, 44);
+  font-weight: 500;
+}
+p {
+
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.13), 0px 20px 20px rgba(0, 0, 0, 0.13); 
+  /* border: solid 2px rgb(44, 44, 44);  */
+}
+
+/* NAV */
+
+.main-head {
+  /* position: sticky;
+  top: 0%;
+  z-index: 4; */
+  background-color: #9eb4ff;
+ 
+  
+}
+.main-head nav {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  min-height: 5vh;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.main-head nav ul {
+  flex: 1 1 20rem;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-around;
+  padding: 2rem;
+  text-decoration: underline;
+}
+.main-head nav a {
+  flex: 1 1 20rem;
+  margin: 1rem;
+}
+
+#logo {
+  list-style: none;
+  text-decoration: none;
+  font-family: Caveat;
+}
+
+/* Über Mich */
+
+#uebermich {
+  min-height: 50vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), transparent),#ffffff;
+}
+.uebermich-wrapper {
+  min-height:50vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;  
+  flex-wrap: wrap;
+}
+.uebermich-text {
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:2rem;
+  min-width:25rem;
+}
+.uebermich-text p {
+  font-weight: 400;
+  text-align: left;
+}
+.uebermich-text h2 {
+  text-align: left;
+  padding: 2rem;
+}
+
+.uebermich-bild {
+  flex: 1 1 20rem;
+  margin:4rem;
+  min-height:25rem;
+  background: url("../img/marten_bremen_sw.jpg");
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+/* Bewerbung1 */
+
+#bewerbung1 {
+  min-height: 50vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent),#9eb4ff;
+}
+.bewerbung1-wrapper {
+  width:90%;
+  margin: auto;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;  
+}
+ .bewerbung1-video {
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+} 
+.bewerbung1-video-wrapper {
+  position: relative ;
+  width:70%; max-width: 70%; min-width: 30rem;
+  padding-bottom: 39.375%; /*720/1280 */
+  margin-bottom: 3rem;
+
+}
+
+.bewerbung1-text {
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  min-width: 40vh;
+  margin: 2rem;
+}
+.bewerbung1-text h2 {
+  text-align: center;
+  padding: 1rem;
+
+}
+.bewerbung1-text p {
+  margin: 1.5rem;
+}
+/* Bewerbung2 */
+
+#bewerbung2 {
+  min-height: 50vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), transparent),#ffffff;
+  background-repeat: no-repeat;
+  background-position: top;  
+}
+.bewerbung2-wrapper {
+  width:90%;
+  margin: auto;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bewerbung2-text {
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  min-width: 40vh;
+  margin: 2rem;
+}
+.bewerbung2-video {
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  margin-bottom: 3rem;
+}
+.bewerbung2-video-wrapper {
+  position: relative ;
+  width:70%; max-width: 70%; min-width: 30rem;
+  padding-bottom: 39.375%; /*720/1280 */
+}
+.bewerbung2-text h2 {
+  text-align: center;
+  padding: 1rem;
+}
+.bewerbung2-text p {
+  margin: 1.5rem;
+}
+/* FOOTER */
+footer {
+  background-color: #9eb4ff;
+
+}
+footer nav {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 6vh;
+  padding: 1.5rem;
+}
+footer nav li {
+  flex: 1 1 20rem;
+  list-style: none;
+}
+
+footer nav div {
+  flex: 1 1 20rem;
+}
+footer nav {
+  width: 90%;
+  margin: auto;
+ 
+}
+
+.twitter {
+  font-size:1.4rem;
+
+}
+.footer-p-klein {
+  font-size: 1.2rem;
+}
+
+/* ANIMATIONS */
+
+@keyframes FadeIn {
+  0% {opacity:0;}
+  100% {opacity:1}
+}
+@keyframes MoveIn {
+  0%{transform: translate(0 5%)}
+  100% {transform: translate(0%, 0%)}
+}
+
+
+nav,.uebermich-wrapper, .bewerbung1-wrapper, .bewerbung2-wrapper, footer nav {
+  opacity: 0;
+  animation: FadeIn 2s forwards 0s;
+  
+}
+
+
+
+
+
+/* MOBILE */
+
+@media screen and (max-width:740px) {
+  nav a {text-align: center;}
+  nav a {padding:1rem;}
+  nav a {justify-content: space-between;}
+  .bewerbung1-wrapper, nav, .bewerbung2-wrapper , .uebermich-wrapper {
+    max-width:90%; }
+
+  
+  
+}
+
+
+@media screen and (min-width:741px) {
+  .bewerbung1-wrapper, nav, .bewerbung2-wrapper , .uebermich-wrapper {
+    max-width:70%;
+
+  }
+  
+
+}
+
