@@ -19,6 +19,10 @@ h3 {
   font-size: 1.33rem;
 }
 
+a:hover {
+  background-color: lightskyblue;
+}
+
 body {
   background: #fffffd;
 }
@@ -26,30 +30,106 @@ body {
 .grid1 {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 5fr 1fr;
+      grid-template-columns: 5fr 1fr;
+  -ms-grid-rows: 0.05fr 1fr;
+      grid-template-rows: 0.05fr 1fr;
   height: 100vh;
+      grid-template-areas: " topBar topBar" " headerContent navBar";
+}
+
+.topBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-right: 20px;
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: topBar;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.topBar img {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.navbarWrapper {
+  border: 1px dotted #272727;
+  margin-right: 3rem;
 }
 
 .navbar {
-  border: solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: navBar;
 }
 
-header {
-  max-width: 80%;
-  margin: auto;
-  height: 100vh;
+.navbar li {
+  list-style: none;
+  padding: 1.3rem;
+  font-size: 1.3rem;
+}
+
+.navbar li:hover {
+  background-color: lightskyblue;
+}
+
+.navbar a {
+  text-decoration: none;
   color: #272727;
 }
 
+.navbar a:visited {
+  color: #272727;
+}
+
+.headerPage {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #272727;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: headerContent;
+}
+
 .headerContent {
-  max-width: 50%;
+  max-width: 70%;
+  margin-top: 8rem;
 }
 
 .headerContent h1 {
-  margin-top: 10rem;
+  margin-top: 0rem;
+  font-family: 'Zilla Slab Highlight';
 }
 
 .headerContent h2 {
-  margin-top: 3rem;
+  margin-top: 4rem;
   line-height: 40px;
 }
 
@@ -57,7 +137,103 @@ header {
   font-weight: 700;
 }
 
+.headerContent h2 span img {
+  height: 2rem;
+  width: 2rem;
+  -webkit-animation: bigbooty 0.5s ease-in infinite;
+          animation: bigbooty 0.5s ease-in infinite;
+}
+
+.headerContent h2 span img:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
 .headerContent h3 {
   margin-top: 4rem;
+}
+
+.headerContent h3 a:visited {
+  color: #272727;
+}
+
+.headerContent h3 a:hover {
+  background-color: lightskyblue;
+}
+
+.headerContent .wheel {
+  padding: 2rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .grid1 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 0.2fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 1fr;
+        grid-template-areas: "topBar" "navBar" " headerContent";
+  }
+  .topBar {
+    margin: auto;
+  }
+  .navbarWrapper {
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headerContent {
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+  .headerContent h3 {
+    text-align: center;
+  }
+  .navbar {
+    background: lightskyblue;
+  }
+  .navbarWrapper {
+    margin-right: 0rem;
+  }
+  .navbar li {
+    font-size: 1rem;
+  }
+}
+
+.fiveheads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: blue;
+}
+
+.fiveheads img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.head1 {
+  position: absolute;
+  bottom: 4rem;
+  left: 6rem;
 }
 /*# sourceMappingURL=styles.css.map */

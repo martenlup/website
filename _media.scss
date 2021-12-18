@@ -1,0 +1,44 @@
+@media screen and (max-width: 1040px) {
+
+    .grid1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 1fr;
+        grid-template-areas:
+        "topBar"
+        "navBar"
+        " headerContent"
+    }  
+
+    .topBar {
+        margin: auto;
+    }
+    .navbarWrapper{
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .headerContent {
+        max-width: 100%;
+        margin-top: 3rem;
+        h3 {
+            text-align: center;
+        }
+    }
+    .navbar {
+        background:lightskyblue;
+    }
+    .navbarWrapper {
+        margin-right: 0rem;
+    }
+    .navbar li {
+        font-size: 1rem;    
+    }
+
+
+}
